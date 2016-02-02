@@ -143,70 +143,70 @@ $(function() {
 	var winner;
 
 	var checkVert = function() {
-		if ((($circles.eq(0).hasClass('flyers')) && ($circles.eq(1).hasClass('flyers')) && ($circles.eq(2).hasClass('flyers')) && ($circles.eq(3).hasClass('flyers')))
-		|| (($circles.eq(1).hasClass('flyers')) && ($circles.eq(2).hasClass('flyers')) && ($circles.eq(3).hasClass('flyers')) && ($circles.eq(4).hasClass('flyers')))
-		|| (($circles.eq(2).hasClass('flyers')) && ($circles.eq(3).hasClass('flyers')) && ($circles.eq(4).hasClass('flyers')) && ($circles.eq(5).hasClass('flyers')))
-		|| (($circles.eq(6).hasClass('flyers')) && ($circles.eq(7).hasClass('flyers')) && ($circles.eq(8).hasClass('flyers')) && ($circles.eq(9).hasClass('flyers')))
-		|| (($circles.eq(7).hasClass('flyers')) && ($circles.eq(8).hasClass('flyers')) && ($circles.eq(9).hasClass('flyers')) && ($circles.eq(10).hasClass('flyers')))
-		|| (($circles.eq(8).hasClass('flyers')) && ($circles.eq(9).hasClass('flyers')) && ($circles.eq(10).hasClass('flyers')) && ($circles.eq(11).hasClass('flyers')))
-		|| (($circles.eq(12).hasClass('flyers')) && ($circles.eq(13).hasClass('flyers')) && ($circles.eq(14).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')))
-		|| (($circles.eq(13).hasClass('flyers')) && ($circles.eq(14).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')) && ($circles.eq(16).hasClass('flyers')))
-		|| (($circles.eq(14).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')) && ($circles.eq(16).hasClass('flyers')) && ($circles.eq(17).hasClass('flyers')))
-		|| (($circles.eq(18).hasClass('flyers')) && ($circles.eq(19).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')))
-		|| (($circles.eq(19).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')) && ($circles.eq(22).hasClass('flyers')))
-		|| (($circles.eq(20).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')) && ($circles.eq(22).hasClass('flyers')) && ($circles.eq(23).hasClass('flyers')))
-		|| (($circles.eq(24).hasClass('flyers')) && ($circles.eq(25).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')))
-		|| (($circles.eq(25).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')) && ($circles.eq(28).hasClass('flyers')))
-		|| (($circles.eq(26).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')) && ($circles.eq(28).hasClass('flyers')) && ($circles.eq(29).hasClass('flyers')))
-		|| (($circles.eq(30).hasClass('flyers')) && ($circles.eq(31).hasClass('flyers')) && ($circles.eq(32).hasClass('flyers')) && ($circles.eq(33).hasClass('flyers')))
-		|| (($circles.eq(31).hasClass('flyers')) && ($circles.eq(32).hasClass('flyers')) && ($circles.eq(33).hasClass('flyers')) && ($circles.eq(34).hasClass('flyers')))
-		|| (($circles.eq(32).hasClass('flyers')) && ($circles.eq(33).hasClass('flyers')) && ($circles.eq(34).hasClass('flyers')) && ($circles.eq(35).hasClass('flyers')))
-		|| (($circles.eq(36).hasClass('flyers')) && ($circles.eq(37).hasClass('flyers')) && ($circles.eq(38).hasClass('flyers')) && ($circles.eq(39).hasClass('flyers')))
-		|| (($circles.eq(37).hasClass('flyers')) && ($circles.eq(38).hasClass('flyers')) && ($circles.eq(39).hasClass('flyers')) && ($circles.eq(40).hasClass('flyers')))
-		|| (($circles.eq(38).hasClass('flyers')) && ($circles.eq(39).hasClass('flyers')) && ($circles.eq(40).hasClass('flyers')) && ($circles.eq(41).hasClass('flyers')))) {
-			return winner = 'flyers';
-		} else if ((($circles.eq(0).hasClass('devils')) && ($circles.eq(1).hasClass('devils')) && ($circles.eq(2).hasClass('devils')) && ($circles.eq(3).hasClass('devils')))
-		|| (($circles.eq(1).hasClass('devils')) && ($circles.eq(2).hasClass('devils')) && ($circles.eq(3).hasClass('devils')) && ($circles.eq(4).hasClass('devils')))
-		|| (($circles.eq(2).hasClass('devils')) && ($circles.eq(3).hasClass('devils')) && ($circles.eq(4).hasClass('devils')) && ($circles.eq(5).hasClass('devils')))
-		|| (($circles.eq(6).hasClass('devils')) && ($circles.eq(7).hasClass('devils')) && ($circles.eq(8).hasClass('devils')) && ($circles.eq(9).hasClass('devils')))
-		|| (($circles.eq(7).hasClass('devils')) && ($circles.eq(8).hasClass('devils')) && ($circles.eq(9).hasClass('devils')) && ($circles.eq(10).hasClass('devils')))
-		|| (($circles.eq(8).hasClass('devils')) && ($circles.eq(9).hasClass('devils')) && ($circles.eq(10).hasClass('devils')) && ($circles.eq(11).hasClass('devils')))
-		|| (($circles.eq(12).hasClass('devils')) && ($circles.eq(13).hasClass('devils')) && ($circles.eq(14).hasClass('devils')) && ($circles.eq(15).hasClass('devils')))
-		|| (($circles.eq(13).hasClass('devils')) && ($circles.eq(14).hasClass('devils')) && ($circles.eq(15).hasClass('devils')) && ($circles.eq(16).hasClass('devils')))
-		|| (($circles.eq(14).hasClass('devils')) && ($circles.eq(15).hasClass('devils')) && ($circles.eq(16).hasClass('devils')) && ($circles.eq(17).hasClass('devils')))
-		|| (($circles.eq(18).hasClass('devils')) && ($circles.eq(19).hasClass('devils')) && ($circles.eq(20).hasClass('devils')) && ($circles.eq(21).hasClass('devils')))
-		|| (($circles.eq(19).hasClass('devils')) && ($circles.eq(20).hasClass('devils')) && ($circles.eq(21).hasClass('devils')) && ($circles.eq(22).hasClass('devils')))
-		|| (($circles.eq(20).hasClass('devils')) && ($circles.eq(21).hasClass('devils')) && ($circles.eq(22).hasClass('devils')) && ($circles.eq(23).hasClass('devils')))
-		|| (($circles.eq(24).hasClass('devils')) && ($circles.eq(25).hasClass('devils')) && ($circles.eq(26).hasClass('devils')) && ($circles.eq(27).hasClass('devils')))
-		|| (($circles.eq(25).hasClass('devils')) && ($circles.eq(26).hasClass('devils')) && ($circles.eq(27).hasClass('devils')) && ($circles.eq(28).hasClass('devils')))
-		|| (($circles.eq(26).hasClass('devils')) && ($circles.eq(27).hasClass('devils')) && ($circles.eq(28).hasClass('devils')) && ($circles.eq(29).hasClass('devils')))
-		|| (($circles.eq(30).hasClass('devils')) && ($circles.eq(31).hasClass('devils')) && ($circles.eq(32).hasClass('devils')) && ($circles.eq(33).hasClass('devils')))
-		|| (($circles.eq(31).hasClass('devils')) && ($circles.eq(32).hasClass('devils')) && ($circles.eq(33).hasClass('devils')) && ($circles.eq(34).hasClass('devils')))
-		|| (($circles.eq(32).hasClass('devils')) && ($circles.eq(33).hasClass('devils')) && ($circles.eq(34).hasClass('devils')) && ($circles.eq(35).hasClass('devils')))
-		|| (($circles.eq(36).hasClass('devils')) && ($circles.eq(37).hasClass('devils')) && ($circles.eq(38).hasClass('devils')) && ($circles.eq(39).hasClass('devils')))
-		|| (($circles.eq(37).hasClass('devils')) && ($circles.eq(38).hasClass('devils')) && ($circles.eq(39).hasClass('devils')) && ($circles.eq(40).hasClass('devils')))
-		|| (($circles.eq(38).hasClass('devils')) && ($circles.eq(39).hasClass('devils')) && ($circles.eq(40).hasClass('devils')) && ($circles.eq(41).hasClass('devils')))) {
-			return winner = 'devils';
-		} else {
-			return;
-		}
-		// for (var i=0; i < 36; i+6) {
-		// 	// tried to use a nested for loop, kept breaking browser
-		// 	// for (var j=i; j < 3; j++)
-		// 	if (matrix[i].hasClass('flyers') && matrix[i+1].hasClass('flyers') && matrix[i+2].hasClass('flyers') && matrix[i+3].hasClass('flyers')) {
-		// 		return winner = 'flyers';
-		// 	} else if (matrix[i+1].hasClass('flyers') && matrix[i+2].hasClass('flyers') && matrix[i+3].hasClass('flyers') && matrix[i+4].hasClass('flyers')) {
-		// 		return winner = 'flyers';
-		// 	} else if (matrix[i+2].hasClass('flyers') && matrix[i+3].hasClass('flyers') && matrix[i+4].hasClass('flyers') && matrix[i+5].hasClass('flyers')) {
-		// 		return winner = 'flyers';
-		// 	} else if (matrix[i].hasClass('devils') && matrix[i+1].hasClass('devils') && matrix[i+2].hasClass('devils') && matrix[i+3].hasClass('devils')) {
-		// 		return winner = 'devils';
-		// 	} else if (matrix[i+1].hasClass('devils') && matrix[i+2].hasClass('devils') && matrix[i+3].hasClass('devils') && matrix[i+4].hasClass('devils')) {
-		// 		return winner = 'devils';
-		// 	} else if (matrix[i+2].hasClass('devils') && matrix[i+3].hasClass('devils') && matrix[i+4].hasClass('devils') && matrix[i+5].hasClass('devils')) {
-		// 		return winner = 'devils';
-		// 	}
+		// if ((($circles.eq(0).hasClass('flyers')) && ($circles.eq(1).hasClass('flyers')) && ($circles.eq(2).hasClass('flyers')) && ($circles.eq(3).hasClass('flyers')))
+		// || (($circles.eq(1).hasClass('flyers')) && ($circles.eq(2).hasClass('flyers')) && ($circles.eq(3).hasClass('flyers')) && ($circles.eq(4).hasClass('flyers')))
+		// || (($circles.eq(2).hasClass('flyers')) && ($circles.eq(3).hasClass('flyers')) && ($circles.eq(4).hasClass('flyers')) && ($circles.eq(5).hasClass('flyers')))
+		// || (($circles.eq(6).hasClass('flyers')) && ($circles.eq(7).hasClass('flyers')) && ($circles.eq(8).hasClass('flyers')) && ($circles.eq(9).hasClass('flyers')))
+		// || (($circles.eq(7).hasClass('flyers')) && ($circles.eq(8).hasClass('flyers')) && ($circles.eq(9).hasClass('flyers')) && ($circles.eq(10).hasClass('flyers')))
+		// || (($circles.eq(8).hasClass('flyers')) && ($circles.eq(9).hasClass('flyers')) && ($circles.eq(10).hasClass('flyers')) && ($circles.eq(11).hasClass('flyers')))
+		// || (($circles.eq(12).hasClass('flyers')) && ($circles.eq(13).hasClass('flyers')) && ($circles.eq(14).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')))
+		// || (($circles.eq(13).hasClass('flyers')) && ($circles.eq(14).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')) && ($circles.eq(16).hasClass('flyers')))
+		// || (($circles.eq(14).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')) && ($circles.eq(16).hasClass('flyers')) && ($circles.eq(17).hasClass('flyers')))
+		// || (($circles.eq(18).hasClass('flyers')) && ($circles.eq(19).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')))
+		// || (($circles.eq(19).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')) && ($circles.eq(22).hasClass('flyers')))
+		// || (($circles.eq(20).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')) && ($circles.eq(22).hasClass('flyers')) && ($circles.eq(23).hasClass('flyers')))
+		// || (($circles.eq(24).hasClass('flyers')) && ($circles.eq(25).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')))
+		// || (($circles.eq(25).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')) && ($circles.eq(28).hasClass('flyers')))
+		// || (($circles.eq(26).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')) && ($circles.eq(28).hasClass('flyers')) && ($circles.eq(29).hasClass('flyers')))
+		// || (($circles.eq(30).hasClass('flyers')) && ($circles.eq(31).hasClass('flyers')) && ($circles.eq(32).hasClass('flyers')) && ($circles.eq(33).hasClass('flyers')))
+		// || (($circles.eq(31).hasClass('flyers')) && ($circles.eq(32).hasClass('flyers')) && ($circles.eq(33).hasClass('flyers')) && ($circles.eq(34).hasClass('flyers')))
+		// || (($circles.eq(32).hasClass('flyers')) && ($circles.eq(33).hasClass('flyers')) && ($circles.eq(34).hasClass('flyers')) && ($circles.eq(35).hasClass('flyers')))
+		// || (($circles.eq(36).hasClass('flyers')) && ($circles.eq(37).hasClass('flyers')) && ($circles.eq(38).hasClass('flyers')) && ($circles.eq(39).hasClass('flyers')))
+		// || (($circles.eq(37).hasClass('flyers')) && ($circles.eq(38).hasClass('flyers')) && ($circles.eq(39).hasClass('flyers')) && ($circles.eq(40).hasClass('flyers')))
+		// || (($circles.eq(38).hasClass('flyers')) && ($circles.eq(39).hasClass('flyers')) && ($circles.eq(40).hasClass('flyers')) && ($circles.eq(41).hasClass('flyers')))) {
+		// 	return winner = 'flyers';
+		// } else if ((($circles.eq(0).hasClass('devils')) && ($circles.eq(1).hasClass('devils')) && ($circles.eq(2).hasClass('devils')) && ($circles.eq(3).hasClass('devils')))
+		// || (($circles.eq(1).hasClass('devils')) && ($circles.eq(2).hasClass('devils')) && ($circles.eq(3).hasClass('devils')) && ($circles.eq(4).hasClass('devils')))
+		// || (($circles.eq(2).hasClass('devils')) && ($circles.eq(3).hasClass('devils')) && ($circles.eq(4).hasClass('devils')) && ($circles.eq(5).hasClass('devils')))
+		// || (($circles.eq(6).hasClass('devils')) && ($circles.eq(7).hasClass('devils')) && ($circles.eq(8).hasClass('devils')) && ($circles.eq(9).hasClass('devils')))
+		// || (($circles.eq(7).hasClass('devils')) && ($circles.eq(8).hasClass('devils')) && ($circles.eq(9).hasClass('devils')) && ($circles.eq(10).hasClass('devils')))
+		// || (($circles.eq(8).hasClass('devils')) && ($circles.eq(9).hasClass('devils')) && ($circles.eq(10).hasClass('devils')) && ($circles.eq(11).hasClass('devils')))
+		// || (($circles.eq(12).hasClass('devils')) && ($circles.eq(13).hasClass('devils')) && ($circles.eq(14).hasClass('devils')) && ($circles.eq(15).hasClass('devils')))
+		// || (($circles.eq(13).hasClass('devils')) && ($circles.eq(14).hasClass('devils')) && ($circles.eq(15).hasClass('devils')) && ($circles.eq(16).hasClass('devils')))
+		// || (($circles.eq(14).hasClass('devils')) && ($circles.eq(15).hasClass('devils')) && ($circles.eq(16).hasClass('devils')) && ($circles.eq(17).hasClass('devils')))
+		// || (($circles.eq(18).hasClass('devils')) && ($circles.eq(19).hasClass('devils')) && ($circles.eq(20).hasClass('devils')) && ($circles.eq(21).hasClass('devils')))
+		// || (($circles.eq(19).hasClass('devils')) && ($circles.eq(20).hasClass('devils')) && ($circles.eq(21).hasClass('devils')) && ($circles.eq(22).hasClass('devils')))
+		// || (($circles.eq(20).hasClass('devils')) && ($circles.eq(21).hasClass('devils')) && ($circles.eq(22).hasClass('devils')) && ($circles.eq(23).hasClass('devils')))
+		// || (($circles.eq(24).hasClass('devils')) && ($circles.eq(25).hasClass('devils')) && ($circles.eq(26).hasClass('devils')) && ($circles.eq(27).hasClass('devils')))
+		// || (($circles.eq(25).hasClass('devils')) && ($circles.eq(26).hasClass('devils')) && ($circles.eq(27).hasClass('devils')) && ($circles.eq(28).hasClass('devils')))
+		// || (($circles.eq(26).hasClass('devils')) && ($circles.eq(27).hasClass('devils')) && ($circles.eq(28).hasClass('devils')) && ($circles.eq(29).hasClass('devils')))
+		// || (($circles.eq(30).hasClass('devils')) && ($circles.eq(31).hasClass('devils')) && ($circles.eq(32).hasClass('devils')) && ($circles.eq(33).hasClass('devils')))
+		// || (($circles.eq(31).hasClass('devils')) && ($circles.eq(32).hasClass('devils')) && ($circles.eq(33).hasClass('devils')) && ($circles.eq(34).hasClass('devils')))
+		// || (($circles.eq(32).hasClass('devils')) && ($circles.eq(33).hasClass('devils')) && ($circles.eq(34).hasClass('devils')) && ($circles.eq(35).hasClass('devils')))
+		// || (($circles.eq(36).hasClass('devils')) && ($circles.eq(37).hasClass('devils')) && ($circles.eq(38).hasClass('devils')) && ($circles.eq(39).hasClass('devils')))
+		// || (($circles.eq(37).hasClass('devils')) && ($circles.eq(38).hasClass('devils')) && ($circles.eq(39).hasClass('devils')) && ($circles.eq(40).hasClass('devils')))
+		// || (($circles.eq(38).hasClass('devils')) && ($circles.eq(39).hasClass('devils')) && ($circles.eq(40).hasClass('devils')) && ($circles.eq(41).hasClass('devils')))) {
+		// 	return winner = 'devils';
+		// } else {
+		// 	return;
 		// }
+		for (var i=0; i < 37; i = i+6) {
+			// tried to use a nested for loop, kept breaking browser
+			// for (var j=i; j < 3; j++)
+			if (matrix[i].hasClass('flyers') && matrix[i+1].hasClass('flyers') && matrix[i+2].hasClass('flyers') && matrix[i+3].hasClass('flyers')) {
+				return winner = 'flyers';
+			} else if (matrix[i+1].hasClass('flyers') && matrix[i+2].hasClass('flyers') && matrix[i+3].hasClass('flyers') && matrix[i+4].hasClass('flyers')) {
+				return winner = 'flyers';
+			} else if (matrix[i+2].hasClass('flyers') && matrix[i+3].hasClass('flyers') && matrix[i+4].hasClass('flyers') && matrix[i+5].hasClass('flyers')) {
+				return winner = 'flyers';
+			} else if (matrix[i].hasClass('devils') && matrix[i+1].hasClass('devils') && matrix[i+2].hasClass('devils') && matrix[i+3].hasClass('devils')) {
+				return winner = 'devils';
+			} else if (matrix[i+1].hasClass('devils') && matrix[i+2].hasClass('devils') && matrix[i+3].hasClass('devils') && matrix[i+4].hasClass('devils')) {
+				return winner = 'devils';
+			} else if (matrix[i+2].hasClass('devils') && matrix[i+3].hasClass('devils') && matrix[i+4].hasClass('devils') && matrix[i+5].hasClass('devils')) {
+				return winner = 'devils';
+			}
+		}
 	}
 
 	// used this to see why function was breaking, was using = where i meant to use ==
@@ -217,131 +217,130 @@ $(function() {
 	// }
 
 	var checkHorz = function() {
-		if ((($circles.eq(0).hasClass('flyers')) && ($circles.eq(6).hasClass('flyers')) && ($circles.eq(12).hasClass('flyers')) && ($circles.eq(18).hasClass('flyers')))
-		|| (($circles.eq(1).hasClass('flyers')) && ($circles.eq(7).hasClass('flyers')) && ($circles.eq(13).hasClass('flyers')) && ($circles.eq(19).hasClass('flyers')))
-		|| (($circles.eq(2).hasClass('flyers')) && ($circles.eq(8).hasClass('flyers')) && ($circles.eq(14).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')))
-		|| (($circles.eq(3).hasClass('flyers')) && ($circles.eq(9).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')))
-		|| (($circles.eq(4).hasClass('flyers')) && ($circles.eq(10).hasClass('flyers')) && ($circles.eq(16).hasClass('flyers')) && ($circles.eq(22).hasClass('flyers')))
-		|| (($circles.eq(5).hasClass('flyers')) && ($circles.eq(11).hasClass('flyers')) && ($circles.eq(17).hasClass('flyers')) && ($circles.eq(23).hasClass('flyers')))
-		|| (($circles.eq(6).hasClass('flyers')) && ($circles.eq(12).hasClass('flyers')) && ($circles.eq(18).hasClass('flyers')) && ($circles.eq(24).hasClass('flyers')))
-		|| (($circles.eq(7).hasClass('flyers')) && ($circles.eq(13).hasClass('flyers')) && ($circles.eq(19).hasClass('flyers')) && ($circles.eq(25).hasClass('flyers')))
-		|| (($circles.eq(8).hasClass('flyers')) && ($circles.eq(14).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')))
-		|| (($circles.eq(9).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')))
-		|| (($circles.eq(10).hasClass('flyers')) && ($circles.eq(16).hasClass('flyers')) && ($circles.eq(22).hasClass('flyers')) && ($circles.eq(28).hasClass('flyers')))
-		|| (($circles.eq(11).hasClass('flyers')) && ($circles.eq(17).hasClass('flyers')) && ($circles.eq(23).hasClass('flyers')) && ($circles.eq(29).hasClass('flyers')))
-		|| (($circles.eq(12).hasClass('flyers')) && ($circles.eq(18).hasClass('flyers')) && ($circles.eq(24).hasClass('flyers')) && ($circles.eq(30).hasClass('flyers')))
-		|| (($circles.eq(13).hasClass('flyers')) && ($circles.eq(19).hasClass('flyers')) && ($circles.eq(25).hasClass('flyers')) && ($circles.eq(31).hasClass('flyers')))
-		|| (($circles.eq(14).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')) && ($circles.eq(32).hasClass('flyers')))
-		|| (($circles.eq(15).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')) && ($circles.eq(33).hasClass('flyers')))
-		|| (($circles.eq(16).hasClass('flyers')) && ($circles.eq(22).hasClass('flyers')) && ($circles.eq(28).hasClass('flyers')) && ($circles.eq(34).hasClass('flyers')))
-		|| (($circles.eq(17).hasClass('flyers')) && ($circles.eq(23).hasClass('flyers')) && ($circles.eq(29).hasClass('flyers')) && ($circles.eq(35).hasClass('flyers')))
-		|| (($circles.eq(18).hasClass('flyers')) && ($circles.eq(24).hasClass('flyers')) && ($circles.eq(30).hasClass('flyers')) && ($circles.eq(36).hasClass('flyers')))
-		|| (($circles.eq(19).hasClass('flyers')) && ($circles.eq(25).hasClass('flyers')) && ($circles.eq(31).hasClass('flyers')) && ($circles.eq(37).hasClass('flyers')))
-		|| (($circles.eq(20).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')) && ($circles.eq(32).hasClass('flyers')) && ($circles.eq(38).hasClass('flyers')))
-		|| (($circles.eq(21).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')) && ($circles.eq(33).hasClass('flyers')) && ($circles.eq(39).hasClass('flyers')))
-		|| (($circles.eq(22).hasClass('flyers')) && ($circles.eq(28).hasClass('flyers')) && ($circles.eq(34).hasClass('flyers')) && ($circles.eq(40).hasClass('flyers')))
-		|| (($circles.eq(23).hasClass('flyers')) && ($circles.eq(29).hasClass('flyers')) && ($circles.eq(35).hasClass('flyers')) && ($circles.eq(41).hasClass('flyers')))) {
-			return winner = 'flyers';
-		} else if ((($circles.eq(0).hasClass('devils')) && ($circles.eq(6).hasClass('devils')) && ($circles.eq(12).hasClass('devils')) && ($circles.eq(18).hasClass('devils')))
-		|| (($circles.eq(1).hasClass('devils')) && ($circles.eq(7).hasClass('devils')) && ($circles.eq(13).hasClass('devils')) && ($circles.eq(19).hasClass('devils')))
-		|| (($circles.eq(2).hasClass('devils')) && ($circles.eq(8).hasClass('devils')) && ($circles.eq(14).hasClass('devils')) && ($circles.eq(20).hasClass('devils')))
-		|| (($circles.eq(3).hasClass('devils')) && ($circles.eq(9).hasClass('devils')) && ($circles.eq(15).hasClass('devils')) && ($circles.eq(21).hasClass('devils')))
-		|| (($circles.eq(4).hasClass('devils')) && ($circles.eq(10).hasClass('devils')) && ($circles.eq(16).hasClass('devils')) && ($circles.eq(22).hasClass('devils')))
-		|| (($circles.eq(5).hasClass('devils')) && ($circles.eq(11).hasClass('devils')) && ($circles.eq(17).hasClass('devils')) && ($circles.eq(23).hasClass('devils')))
-		|| (($circles.eq(6).hasClass('devils')) && ($circles.eq(12).hasClass('devils')) && ($circles.eq(18).hasClass('devils')) && ($circles.eq(24).hasClass('devils')))
-		|| (($circles.eq(7).hasClass('devils')) && ($circles.eq(13).hasClass('devils')) && ($circles.eq(19).hasClass('devils')) && ($circles.eq(25).hasClass('devils')))
-		|| (($circles.eq(8).hasClass('devils')) && ($circles.eq(14).hasClass('devils')) && ($circles.eq(20).hasClass('devils')) && ($circles.eq(26).hasClass('devils')))
-		|| (($circles.eq(9).hasClass('devils')) && ($circles.eq(15).hasClass('devils')) && ($circles.eq(21).hasClass('devils')) && ($circles.eq(27).hasClass('devils')))
-		|| (($circles.eq(10).hasClass('devils')) && ($circles.eq(16).hasClass('devils')) && ($circles.eq(22).hasClass('devils')) && ($circles.eq(28).hasClass('devils')))
-		|| (($circles.eq(11).hasClass('devils')) && ($circles.eq(17).hasClass('devils')) && ($circles.eq(23).hasClass('devils')) && ($circles.eq(29).hasClass('devils')))
-		|| (($circles.eq(12).hasClass('devils')) && ($circles.eq(18).hasClass('devils')) && ($circles.eq(24).hasClass('devils')) && ($circles.eq(30).hasClass('devils')))
-		|| (($circles.eq(13).hasClass('devils')) && ($circles.eq(19).hasClass('devils')) && ($circles.eq(25).hasClass('devils')) && ($circles.eq(31).hasClass('devils')))
-		|| (($circles.eq(14).hasClass('devils')) && ($circles.eq(20).hasClass('devils')) && ($circles.eq(26).hasClass('devils')) && ($circles.eq(32).hasClass('devils')))
-		|| (($circles.eq(15).hasClass('devils')) && ($circles.eq(21).hasClass('devils')) && ($circles.eq(27).hasClass('devils')) && ($circles.eq(33).hasClass('devils')))
-		|| (($circles.eq(16).hasClass('devils')) && ($circles.eq(22).hasClass('devils')) && ($circles.eq(28).hasClass('devils')) && ($circles.eq(34).hasClass('devils')))
-		|| (($circles.eq(17).hasClass('devils')) && ($circles.eq(23).hasClass('devils')) && ($circles.eq(29).hasClass('devils')) && ($circles.eq(35).hasClass('devils')))
-		|| (($circles.eq(18).hasClass('devils')) && ($circles.eq(24).hasClass('devils')) && ($circles.eq(30).hasClass('devils')) && ($circles.eq(36).hasClass('devils')))
-		|| (($circles.eq(19).hasClass('devils')) && ($circles.eq(25).hasClass('devils')) && ($circles.eq(31).hasClass('devils')) && ($circles.eq(37).hasClass('devils')))
-		|| (($circles.eq(20).hasClass('devils')) && ($circles.eq(26).hasClass('devils')) && ($circles.eq(32).hasClass('devils')) && ($circles.eq(38).hasClass('devils')))
-		|| (($circles.eq(21).hasClass('devils')) && ($circles.eq(27).hasClass('devils')) && ($circles.eq(33).hasClass('devils')) && ($circles.eq(39).hasClass('devils')))
-		|| (($circles.eq(22).hasClass('devils')) && ($circles.eq(28).hasClass('devils')) && ($circles.eq(34).hasClass('devils')) && ($circles.eq(40).hasClass('devils')))
-		|| (($circles.eq(23).hasClass('devils')) && ($circles.eq(29).hasClass('devils')) && ($circles.eq(35).hasClass('devils')) && ($circles.eq(41).hasClass('devils')))) {
-			return winner = 'devils';
-		} else {
-			return;
-		}
-		// for (var i=0; i < 25; i++) {
-		// 	if (matrix[i].hasClass('flyers') && matrix[i+6].hasClass('flyers') && matrix[i+12].hasClass('flyers') && matrix[i+18].hasClass('flyers')) {
-		// 		return winner = 'flyers';
-		// 	} else if (matrix[i].hasClass('devils') && matrix[i+6].hasClass('devils') && matrix[i+12].hasClass('devils') && matrix[i+18].hasClass('devils')) {
-		// 		return winner = 'devils';
-		// 	} else {
-		// 		return;
-		// 	}
+		// if ((($circles.eq(0).hasClass('flyers')) && ($circles.eq(6).hasClass('flyers')) && ($circles.eq(12).hasClass('flyers')) && ($circles.eq(18).hasClass('flyers')))
+		// || (($circles.eq(1).hasClass('flyers')) && ($circles.eq(7).hasClass('flyers')) && ($circles.eq(13).hasClass('flyers')) && ($circles.eq(19).hasClass('flyers')))
+		// || (($circles.eq(2).hasClass('flyers')) && ($circles.eq(8).hasClass('flyers')) && ($circles.eq(14).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')))
+		// || (($circles.eq(3).hasClass('flyers')) && ($circles.eq(9).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')))
+		// || (($circles.eq(4).hasClass('flyers')) && ($circles.eq(10).hasClass('flyers')) && ($circles.eq(16).hasClass('flyers')) && ($circles.eq(22).hasClass('flyers')))
+		// || (($circles.eq(5).hasClass('flyers')) && ($circles.eq(11).hasClass('flyers')) && ($circles.eq(17).hasClass('flyers')) && ($circles.eq(23).hasClass('flyers')))
+		// || (($circles.eq(6).hasClass('flyers')) && ($circles.eq(12).hasClass('flyers')) && ($circles.eq(18).hasClass('flyers')) && ($circles.eq(24).hasClass('flyers')))
+		// || (($circles.eq(7).hasClass('flyers')) && ($circles.eq(13).hasClass('flyers')) && ($circles.eq(19).hasClass('flyers')) && ($circles.eq(25).hasClass('flyers')))
+		// || (($circles.eq(8).hasClass('flyers')) && ($circles.eq(14).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')))
+		// || (($circles.eq(9).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')))
+		// || (($circles.eq(10).hasClass('flyers')) && ($circles.eq(16).hasClass('flyers')) && ($circles.eq(22).hasClass('flyers')) && ($circles.eq(28).hasClass('flyers')))
+		// || (($circles.eq(11).hasClass('flyers')) && ($circles.eq(17).hasClass('flyers')) && ($circles.eq(23).hasClass('flyers')) && ($circles.eq(29).hasClass('flyers')))
+		// || (($circles.eq(12).hasClass('flyers')) && ($circles.eq(18).hasClass('flyers')) && ($circles.eq(24).hasClass('flyers')) && ($circles.eq(30).hasClass('flyers')))
+		// || (($circles.eq(13).hasClass('flyers')) && ($circles.eq(19).hasClass('flyers')) && ($circles.eq(25).hasClass('flyers')) && ($circles.eq(31).hasClass('flyers')))
+		// || (($circles.eq(14).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')) && ($circles.eq(32).hasClass('flyers')))
+		// || (($circles.eq(15).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')) && ($circles.eq(33).hasClass('flyers')))
+		// || (($circles.eq(16).hasClass('flyers')) && ($circles.eq(22).hasClass('flyers')) && ($circles.eq(28).hasClass('flyers')) && ($circles.eq(34).hasClass('flyers')))
+		// || (($circles.eq(17).hasClass('flyers')) && ($circles.eq(23).hasClass('flyers')) && ($circles.eq(29).hasClass('flyers')) && ($circles.eq(35).hasClass('flyers')))
+		// || (($circles.eq(18).hasClass('flyers')) && ($circles.eq(24).hasClass('flyers')) && ($circles.eq(30).hasClass('flyers')) && ($circles.eq(36).hasClass('flyers')))
+		// || (($circles.eq(19).hasClass('flyers')) && ($circles.eq(25).hasClass('flyers')) && ($circles.eq(31).hasClass('flyers')) && ($circles.eq(37).hasClass('flyers')))
+		// || (($circles.eq(20).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')) && ($circles.eq(32).hasClass('flyers')) && ($circles.eq(38).hasClass('flyers')))
+		// || (($circles.eq(21).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')) && ($circles.eq(33).hasClass('flyers')) && ($circles.eq(39).hasClass('flyers')))
+		// || (($circles.eq(22).hasClass('flyers')) && ($circles.eq(28).hasClass('flyers')) && ($circles.eq(34).hasClass('flyers')) && ($circles.eq(40).hasClass('flyers')))
+		// || (($circles.eq(23).hasClass('flyers')) && ($circles.eq(29).hasClass('flyers')) && ($circles.eq(35).hasClass('flyers')) && ($circles.eq(41).hasClass('flyers')))) {
+		// 	return winner = 'flyers';
+		// } else if ((($circles.eq(0).hasClass('devils')) && ($circles.eq(6).hasClass('devils')) && ($circles.eq(12).hasClass('devils')) && ($circles.eq(18).hasClass('devils')))
+		// || (($circles.eq(1).hasClass('devils')) && ($circles.eq(7).hasClass('devils')) && ($circles.eq(13).hasClass('devils')) && ($circles.eq(19).hasClass('devils')))
+		// || (($circles.eq(2).hasClass('devils')) && ($circles.eq(8).hasClass('devils')) && ($circles.eq(14).hasClass('devils')) && ($circles.eq(20).hasClass('devils')))
+		// || (($circles.eq(3).hasClass('devils')) && ($circles.eq(9).hasClass('devils')) && ($circles.eq(15).hasClass('devils')) && ($circles.eq(21).hasClass('devils')))
+		// || (($circles.eq(4).hasClass('devils')) && ($circles.eq(10).hasClass('devils')) && ($circles.eq(16).hasClass('devils')) && ($circles.eq(22).hasClass('devils')))
+		// || (($circles.eq(5).hasClass('devils')) && ($circles.eq(11).hasClass('devils')) && ($circles.eq(17).hasClass('devils')) && ($circles.eq(23).hasClass('devils')))
+		// || (($circles.eq(6).hasClass('devils')) && ($circles.eq(12).hasClass('devils')) && ($circles.eq(18).hasClass('devils')) && ($circles.eq(24).hasClass('devils')))
+		// || (($circles.eq(7).hasClass('devils')) && ($circles.eq(13).hasClass('devils')) && ($circles.eq(19).hasClass('devils')) && ($circles.eq(25).hasClass('devils')))
+		// || (($circles.eq(8).hasClass('devils')) && ($circles.eq(14).hasClass('devils')) && ($circles.eq(20).hasClass('devils')) && ($circles.eq(26).hasClass('devils')))
+		// || (($circles.eq(9).hasClass('devils')) && ($circles.eq(15).hasClass('devils')) && ($circles.eq(21).hasClass('devils')) && ($circles.eq(27).hasClass('devils')))
+		// || (($circles.eq(10).hasClass('devils')) && ($circles.eq(16).hasClass('devils')) && ($circles.eq(22).hasClass('devils')) && ($circles.eq(28).hasClass('devils')))
+		// || (($circles.eq(11).hasClass('devils')) && ($circles.eq(17).hasClass('devils')) && ($circles.eq(23).hasClass('devils')) && ($circles.eq(29).hasClass('devils')))
+		// || (($circles.eq(12).hasClass('devils')) && ($circles.eq(18).hasClass('devils')) && ($circles.eq(24).hasClass('devils')) && ($circles.eq(30).hasClass('devils')))
+		// || (($circles.eq(13).hasClass('devils')) && ($circles.eq(19).hasClass('devils')) && ($circles.eq(25).hasClass('devils')) && ($circles.eq(31).hasClass('devils')))
+		// || (($circles.eq(14).hasClass('devils')) && ($circles.eq(20).hasClass('devils')) && ($circles.eq(26).hasClass('devils')) && ($circles.eq(32).hasClass('devils')))
+		// || (($circles.eq(15).hasClass('devils')) && ($circles.eq(21).hasClass('devils')) && ($circles.eq(27).hasClass('devils')) && ($circles.eq(33).hasClass('devils')))
+		// || (($circles.eq(16).hasClass('devils')) && ($circles.eq(22).hasClass('devils')) && ($circles.eq(28).hasClass('devils')) && ($circles.eq(34).hasClass('devils')))
+		// || (($circles.eq(17).hasClass('devils')) && ($circles.eq(23).hasClass('devils')) && ($circles.eq(29).hasClass('devils')) && ($circles.eq(35).hasClass('devils')))
+		// || (($circles.eq(18).hasClass('devils')) && ($circles.eq(24).hasClass('devils')) && ($circles.eq(30).hasClass('devils')) && ($circles.eq(36).hasClass('devils')))
+		// || (($circles.eq(19).hasClass('devils')) && ($circles.eq(25).hasClass('devils')) && ($circles.eq(31).hasClass('devils')) && ($circles.eq(37).hasClass('devils')))
+		// || (($circles.eq(20).hasClass('devils')) && ($circles.eq(26).hasClass('devils')) && ($circles.eq(32).hasClass('devils')) && ($circles.eq(38).hasClass('devils')))
+		// || (($circles.eq(21).hasClass('devils')) && ($circles.eq(27).hasClass('devils')) && ($circles.eq(33).hasClass('devils')) && ($circles.eq(39).hasClass('devils')))
+		// || (($circles.eq(22).hasClass('devils')) && ($circles.eq(28).hasClass('devils')) && ($circles.eq(34).hasClass('devils')) && ($circles.eq(40).hasClass('devils')))
+		// || (($circles.eq(23).hasClass('devils')) && ($circles.eq(29).hasClass('devils')) && ($circles.eq(35).hasClass('devils')) && ($circles.eq(41).hasClass('devils')))) {
+		// 	return winner = 'devils';
+		// } else {
+		// 	return;
 		// }
+		for (var i=0; i < 25; i++) {
+			if (matrix[i].hasClass('flyers') && matrix[i+6].hasClass('flyers') && matrix[i+12].hasClass('flyers') && matrix[i+18].hasClass('flyers')) {
+				return winner = 'flyers';
+			} else if (matrix[i].hasClass('devils') && matrix[i+6].hasClass('devils') && matrix[i+12].hasClass('devils') && matrix[i+18].hasClass('devils')) {
+				return winner = 'devils';
+			}
+		}
 	}
 
 	var checkDiag = function() {
-		if ((($circles.eq(0).hasClass('flyers')) && ($circles.eq(7).hasClass('flyers')) && ($circles.eq(14).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')))
-		|| (($circles.eq(1).hasClass('flyers')) && ($circles.eq(8).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')) && ($circles.eq(22).hasClass('flyers')))
-		|| (($circles.eq(2).hasClass('flyers')) && ($circles.eq(9).hasClass('flyers')) && ($circles.eq(16).hasClass('flyers')) && ($circles.eq(23).hasClass('flyers')))
-		|| (($circles.eq(3).hasClass('flyers')) && ($circles.eq(8).hasClass('flyers')) && ($circles.eq(13).hasClass('flyers')) && ($circles.eq(18).hasClass('flyers')))
-		|| (($circles.eq(4).hasClass('flyers')) && ($circles.eq(9).hasClass('flyers')) && ($circles.eq(14).hasClass('flyers')) && ($circles.eq(19).hasClass('flyers')))
-		|| (($circles.eq(5).hasClass('flyers')) && ($circles.eq(10).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')))
-		|| (($circles.eq(6).hasClass('flyers')) && ($circles.eq(13).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')))
-		|| (($circles.eq(7).hasClass('flyers')) && ($circles.eq(14).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')) && ($circles.eq(28).hasClass('flyers')))
-		|| (($circles.eq(8).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')) && ($circles.eq(22).hasClass('flyers')) && ($circles.eq(29).hasClass('flyers')))
-		|| (($circles.eq(9).hasClass('flyers')) && ($circles.eq(14).hasClass('flyers')) && ($circles.eq(19).hasClass('flyers')) && ($circles.eq(24).hasClass('flyers')))
-		|| (($circles.eq(10).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')) && ($circles.eq(25).hasClass('flyers')))
-		|| (($circles.eq(11).hasClass('flyers')) && ($circles.eq(16).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')))
-		|| (($circles.eq(12).hasClass('flyers')) && ($circles.eq(19).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')) && ($circles.eq(33).hasClass('flyers')))
-		|| (($circles.eq(13).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')) && ($circles.eq(34).hasClass('flyers')))
-		|| (($circles.eq(14).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')) && ($circles.eq(28).hasClass('flyers')) && ($circles.eq(35).hasClass('flyers')))
-		|| (($circles.eq(15).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')) && ($circles.eq(25).hasClass('flyers')) && ($circles.eq(30).hasClass('flyers')))
-		|| (($circles.eq(16).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')) && ($circles.eq(31).hasClass('flyers')))
-		|| (($circles.eq(17).hasClass('flyers')) && ($circles.eq(22).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')) && ($circles.eq(32).hasClass('flyers')))
-		|| (($circles.eq(18).hasClass('flyers')) && ($circles.eq(25).hasClass('flyers')) && ($circles.eq(32).hasClass('flyers')) && ($circles.eq(39).hasClass('flyers')))
-		|| (($circles.eq(19).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')) && ($circles.eq(33).hasClass('flyers')) && ($circles.eq(40).hasClass('flyers')))
-		|| (($circles.eq(20).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')) && ($circles.eq(34).hasClass('flyers')) && ($circles.eq(41).hasClass('flyers')))
-		|| (($circles.eq(21).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')) && ($circles.eq(31).hasClass('flyers')) && ($circles.eq(36).hasClass('flyers')))
-		|| (($circles.eq(22).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')) && ($circles.eq(32).hasClass('flyers')) && ($circles.eq(37).hasClass('flyers')))
-		|| (($circles.eq(23).hasClass('flyers')) && ($circles.eq(28).hasClass('flyers')) && ($circles.eq(33).hasClass('flyers')) && ($circles.eq(38).hasClass('flyers')))) {
-			return winner = 'flyers';
-		} else if ((($circles.eq(0).hasClass('devils')) && ($circles.eq(7).hasClass('devils')) && ($circles.eq(14).hasClass('devils')) && ($circles.eq(21).hasClass('devils')))
-		|| (($circles.eq(1).hasClass('devils')) && ($circles.eq(8).hasClass('devils')) && ($circles.eq(15).hasClass('devils')) && ($circles.eq(22).hasClass('devils')))
-		|| (($circles.eq(2).hasClass('devils')) && ($circles.eq(9).hasClass('devils')) && ($circles.eq(16).hasClass('devils')) && ($circles.eq(23).hasClass('devils')))
-		|| (($circles.eq(3).hasClass('devils')) && ($circles.eq(8).hasClass('devils')) && ($circles.eq(13).hasClass('devils')) && ($circles.eq(18).hasClass('devils')))
-		|| (($circles.eq(4).hasClass('devils')) && ($circles.eq(9).hasClass('devils')) && ($circles.eq(14).hasClass('devils')) && ($circles.eq(19).hasClass('devils')))
-		|| (($circles.eq(5).hasClass('devils')) && ($circles.eq(10).hasClass('devils')) && ($circles.eq(15).hasClass('devils')) && ($circles.eq(20).hasClass('devils')))
-		|| (($circles.eq(6).hasClass('devils')) && ($circles.eq(13).hasClass('devils')) && ($circles.eq(20).hasClass('devils')) && ($circles.eq(27).hasClass('devils')))
-		|| (($circles.eq(7).hasClass('devils')) && ($circles.eq(14).hasClass('devils')) && ($circles.eq(21).hasClass('devils')) && ($circles.eq(28).hasClass('devils')))
-		|| (($circles.eq(8).hasClass('devils')) && ($circles.eq(15).hasClass('devils')) && ($circles.eq(22).hasClass('devils')) && ($circles.eq(29).hasClass('devils')))
-		|| (($circles.eq(9).hasClass('devils')) && ($circles.eq(14).hasClass('devils')) && ($circles.eq(19).hasClass('devils')) && ($circles.eq(24).hasClass('devils')))
-		|| (($circles.eq(10).hasClass('devils')) && ($circles.eq(15).hasClass('devils')) && ($circles.eq(20).hasClass('devils')) && ($circles.eq(25).hasClass('devils')))
-		|| (($circles.eq(11).hasClass('devils')) && ($circles.eq(16).hasClass('devils')) && ($circles.eq(21).hasClass('devils')) && ($circles.eq(26).hasClass('devils')))
-		|| (($circles.eq(12).hasClass('devils')) && ($circles.eq(19).hasClass('devils')) && ($circles.eq(26).hasClass('devils')) && ($circles.eq(33).hasClass('devils')))
-		|| (($circles.eq(13).hasClass('devils')) && ($circles.eq(20).hasClass('devils')) && ($circles.eq(27).hasClass('devils')) && ($circles.eq(34).hasClass('devils')))
-		|| (($circles.eq(14).hasClass('devils')) && ($circles.eq(21).hasClass('devils')) && ($circles.eq(28).hasClass('devils')) && ($circles.eq(35).hasClass('devils')))
-		|| (($circles.eq(15).hasClass('devils')) && ($circles.eq(20).hasClass('devils')) && ($circles.eq(25).hasClass('devils')) && ($circles.eq(30).hasClass('devils')))
-		|| (($circles.eq(16).hasClass('devils')) && ($circles.eq(21).hasClass('devils')) && ($circles.eq(26).hasClass('devils')) && ($circles.eq(31).hasClass('devils')))
-		|| (($circles.eq(17).hasClass('devils')) && ($circles.eq(22).hasClass('devils')) && ($circles.eq(27).hasClass('devils')) && ($circles.eq(32).hasClass('devils')))
-		|| (($circles.eq(18).hasClass('devils')) && ($circles.eq(25).hasClass('devils')) && ($circles.eq(32).hasClass('devils')) && ($circles.eq(39).hasClass('devils')))
-		|| (($circles.eq(19).hasClass('devils')) && ($circles.eq(26).hasClass('devils')) && ($circles.eq(33).hasClass('devils')) && ($circles.eq(40).hasClass('devils')))
-		|| (($circles.eq(20).hasClass('devils')) && ($circles.eq(27).hasClass('devils')) && ($circles.eq(34).hasClass('devils')) && ($circles.eq(41).hasClass('devils')))
-		|| (($circles.eq(21).hasClass('devils')) && ($circles.eq(26).hasClass('devils')) && ($circles.eq(31).hasClass('devils')) && ($circles.eq(36).hasClass('devils')))
-		|| (($circles.eq(22).hasClass('devils')) && ($circles.eq(27).hasClass('devils')) && ($circles.eq(32).hasClass('devils')) && ($circles.eq(37).hasClass('devils')))
-		|| (($circles.eq(23).hasClass('devils')) && ($circles.eq(28).hasClass('devils')) && ($circles.eq(33).hasClass('devils')) && ($circles.eq(38).hasClass('devils')))) {
-			return winner = 'devils';
-		} else {
-			return;
-		}
-		// for (var i=0; i < 3; i++) {
-		// 	if (matrix[i].hasClass('flyers') && matrix[i+7].hasClass('flyers') && matrix[i+14].hasClass('flyers') && matrix[i+21].hasClass('flyers')) {
-		// 		return winner = 'flyers';
-		// 	} else if (matrix[i].hasClass('devils') && matrix[i+6].hasClass('devils') && matrix[i+12].hasClass('devils') && matrix[i+18].hasClass('devils')) {
-		// 		return winner = 'devils';
-		// 	}
+		// if ((($circles.eq(0).hasClass('flyers')) && ($circles.eq(7).hasClass('flyers')) && ($circles.eq(14).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')))
+		// || (($circles.eq(1).hasClass('flyers')) && ($circles.eq(8).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')) && ($circles.eq(22).hasClass('flyers')))
+		// || (($circles.eq(2).hasClass('flyers')) && ($circles.eq(9).hasClass('flyers')) && ($circles.eq(16).hasClass('flyers')) && ($circles.eq(23).hasClass('flyers')))
+		// || (($circles.eq(3).hasClass('flyers')) && ($circles.eq(8).hasClass('flyers')) && ($circles.eq(13).hasClass('flyers')) && ($circles.eq(18).hasClass('flyers')))
+		// || (($circles.eq(4).hasClass('flyers')) && ($circles.eq(9).hasClass('flyers')) && ($circles.eq(14).hasClass('flyers')) && ($circles.eq(19).hasClass('flyers')))
+		// || (($circles.eq(5).hasClass('flyers')) && ($circles.eq(10).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')))
+		// || (($circles.eq(6).hasClass('flyers')) && ($circles.eq(13).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')))
+		// || (($circles.eq(7).hasClass('flyers')) && ($circles.eq(14).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')) && ($circles.eq(28).hasClass('flyers')))
+		// || (($circles.eq(8).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')) && ($circles.eq(22).hasClass('flyers')) && ($circles.eq(29).hasClass('flyers')))
+		// || (($circles.eq(9).hasClass('flyers')) && ($circles.eq(14).hasClass('flyers')) && ($circles.eq(19).hasClass('flyers')) && ($circles.eq(24).hasClass('flyers')))
+		// || (($circles.eq(10).hasClass('flyers')) && ($circles.eq(15).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')) && ($circles.eq(25).hasClass('flyers')))
+		// || (($circles.eq(11).hasClass('flyers')) && ($circles.eq(16).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')))
+		// || (($circles.eq(12).hasClass('flyers')) && ($circles.eq(19).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')) && ($circles.eq(33).hasClass('flyers')))
+		// || (($circles.eq(13).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')) && ($circles.eq(34).hasClass('flyers')))
+		// || (($circles.eq(14).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')) && ($circles.eq(28).hasClass('flyers')) && ($circles.eq(35).hasClass('flyers')))
+		// || (($circles.eq(15).hasClass('flyers')) && ($circles.eq(20).hasClass('flyers')) && ($circles.eq(25).hasClass('flyers')) && ($circles.eq(30).hasClass('flyers')))
+		// || (($circles.eq(16).hasClass('flyers')) && ($circles.eq(21).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')) && ($circles.eq(31).hasClass('flyers')))
+		// || (($circles.eq(17).hasClass('flyers')) && ($circles.eq(22).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')) && ($circles.eq(32).hasClass('flyers')))
+		// || (($circles.eq(18).hasClass('flyers')) && ($circles.eq(25).hasClass('flyers')) && ($circles.eq(32).hasClass('flyers')) && ($circles.eq(39).hasClass('flyers')))
+		// || (($circles.eq(19).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')) && ($circles.eq(33).hasClass('flyers')) && ($circles.eq(40).hasClass('flyers')))
+		// || (($circles.eq(20).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')) && ($circles.eq(34).hasClass('flyers')) && ($circles.eq(41).hasClass('flyers')))
+		// || (($circles.eq(21).hasClass('flyers')) && ($circles.eq(26).hasClass('flyers')) && ($circles.eq(31).hasClass('flyers')) && ($circles.eq(36).hasClass('flyers')))
+		// || (($circles.eq(22).hasClass('flyers')) && ($circles.eq(27).hasClass('flyers')) && ($circles.eq(32).hasClass('flyers')) && ($circles.eq(37).hasClass('flyers')))
+		// || (($circles.eq(23).hasClass('flyers')) && ($circles.eq(28).hasClass('flyers')) && ($circles.eq(33).hasClass('flyers')) && ($circles.eq(38).hasClass('flyers')))) {
+		// 	return winner = 'flyers';
+		// } else if ((($circles.eq(0).hasClass('devils')) && ($circles.eq(7).hasClass('devils')) && ($circles.eq(14).hasClass('devils')) && ($circles.eq(21).hasClass('devils')))
+		// || (($circles.eq(1).hasClass('devils')) && ($circles.eq(8).hasClass('devils')) && ($circles.eq(15).hasClass('devils')) && ($circles.eq(22).hasClass('devils')))
+		// || (($circles.eq(2).hasClass('devils')) && ($circles.eq(9).hasClass('devils')) && ($circles.eq(16).hasClass('devils')) && ($circles.eq(23).hasClass('devils')))
+		// || (($circles.eq(3).hasClass('devils')) && ($circles.eq(8).hasClass('devils')) && ($circles.eq(13).hasClass('devils')) && ($circles.eq(18).hasClass('devils')))
+		// || (($circles.eq(4).hasClass('devils')) && ($circles.eq(9).hasClass('devils')) && ($circles.eq(14).hasClass('devils')) && ($circles.eq(19).hasClass('devils')))
+		// || (($circles.eq(5).hasClass('devils')) && ($circles.eq(10).hasClass('devils')) && ($circles.eq(15).hasClass('devils')) && ($circles.eq(20).hasClass('devils')))
+		// || (($circles.eq(6).hasClass('devils')) && ($circles.eq(13).hasClass('devils')) && ($circles.eq(20).hasClass('devils')) && ($circles.eq(27).hasClass('devils')))
+		// || (($circles.eq(7).hasClass('devils')) && ($circles.eq(14).hasClass('devils')) && ($circles.eq(21).hasClass('devils')) && ($circles.eq(28).hasClass('devils')))
+		// || (($circles.eq(8).hasClass('devils')) && ($circles.eq(15).hasClass('devils')) && ($circles.eq(22).hasClass('devils')) && ($circles.eq(29).hasClass('devils')))
+		// || (($circles.eq(9).hasClass('devils')) && ($circles.eq(14).hasClass('devils')) && ($circles.eq(19).hasClass('devils')) && ($circles.eq(24).hasClass('devils')))
+		// || (($circles.eq(10).hasClass('devils')) && ($circles.eq(15).hasClass('devils')) && ($circles.eq(20).hasClass('devils')) && ($circles.eq(25).hasClass('devils')))
+		// || (($circles.eq(11).hasClass('devils')) && ($circles.eq(16).hasClass('devils')) && ($circles.eq(21).hasClass('devils')) && ($circles.eq(26).hasClass('devils')))
+		// || (($circles.eq(12).hasClass('devils')) && ($circles.eq(19).hasClass('devils')) && ($circles.eq(26).hasClass('devils')) && ($circles.eq(33).hasClass('devils')))
+		// || (($circles.eq(13).hasClass('devils')) && ($circles.eq(20).hasClass('devils')) && ($circles.eq(27).hasClass('devils')) && ($circles.eq(34).hasClass('devils')))
+		// || (($circles.eq(14).hasClass('devils')) && ($circles.eq(21).hasClass('devils')) && ($circles.eq(28).hasClass('devils')) && ($circles.eq(35).hasClass('devils')))
+		// || (($circles.eq(15).hasClass('devils')) && ($circles.eq(20).hasClass('devils')) && ($circles.eq(25).hasClass('devils')) && ($circles.eq(30).hasClass('devils')))
+		// || (($circles.eq(16).hasClass('devils')) && ($circles.eq(21).hasClass('devils')) && ($circles.eq(26).hasClass('devils')) && ($circles.eq(31).hasClass('devils')))
+		// || (($circles.eq(17).hasClass('devils')) && ($circles.eq(22).hasClass('devils')) && ($circles.eq(27).hasClass('devils')) && ($circles.eq(32).hasClass('devils')))
+		// || (($circles.eq(18).hasClass('devils')) && ($circles.eq(25).hasClass('devils')) && ($circles.eq(32).hasClass('devils')) && ($circles.eq(39).hasClass('devils')))
+		// || (($circles.eq(19).hasClass('devils')) && ($circles.eq(26).hasClass('devils')) && ($circles.eq(33).hasClass('devils')) && ($circles.eq(40).hasClass('devils')))
+		// || (($circles.eq(20).hasClass('devils')) && ($circles.eq(27).hasClass('devils')) && ($circles.eq(34).hasClass('devils')) && ($circles.eq(41).hasClass('devils')))
+		// || (($circles.eq(21).hasClass('devils')) && ($circles.eq(26).hasClass('devils')) && ($circles.eq(31).hasClass('devils')) && ($circles.eq(36).hasClass('devils')))
+		// || (($circles.eq(22).hasClass('devils')) && ($circles.eq(27).hasClass('devils')) && ($circles.eq(32).hasClass('devils')) && ($circles.eq(37).hasClass('devils')))
+		// || (($circles.eq(23).hasClass('devils')) && ($circles.eq(28).hasClass('devils')) && ($circles.eq(33).hasClass('devils')) && ($circles.eq(38).hasClass('devils')))) {
+		// 	return winner = 'devils';
+		// } else {
+		// 	return;
 		// }
+		
+		for (var i=0; i < 3; i++) {
+			if (matrix[i].hasClass('flyers') && matrix[i+7].hasClass('flyers') && matrix[i+14].hasClass('flyers') && matrix[i+21].hasClass('flyers')) {
+				return winner = 'flyers';
+			} else if (matrix[i].hasClass('devils') && matrix[i+6].hasClass('devils') && matrix[i+12].hasClass('devils') && matrix[i+18].hasClass('devils')) {
+				return winner = 'devils';
+			}
+		}
 	}
 
 	// pull each column
