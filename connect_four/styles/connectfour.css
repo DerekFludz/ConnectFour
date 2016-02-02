@@ -3,17 +3,23 @@
 	padding: 0;
 }
 
+@font-face {
+	font-family: 'ConnectFour';
+	src: url('../fonts/play-Regular.ttf');
+}
+
 body {
 	background-image: url('../images/background.jpg');
 	background-size: cover;
+	font-family: 'ConnectFour';
 }
-
-/*@fontface {
-
-}*/
 
 .header {
 	text-align: center;
+}
+
+h4 {
+	width: 130%;
 }
 
 .score {
@@ -202,8 +208,8 @@ body {
 
 	To-Do-List
 
-	Drop/Bounce Animation - sure.. kinda did that
-	Boxes for Player Names/Win Count/Current Turn
-	Initial opacity?
+	Drop/Bounce Animation -- sure.. kinda did that
+	Boxes for Player Names/Win Count/Current Turn -- decided against player name inputs, but could implement if wanted
+	Initial opacity? -- didn't get to play around with this
 
 */
